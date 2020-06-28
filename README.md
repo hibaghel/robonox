@@ -1,1 +1,1 @@
-This is robonox submission for our team XXXXXXXX.
+This is robonox submission for our team Team Voltage.
