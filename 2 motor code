@@ -34,6 +34,10 @@ try:
         elif (pincode == 2):
             s2.ChangeDutyCycle(7.5) #TURN SERVO MOTOR BY 180 i.e push the package in cart 2 
             s1.ChangeDutyCycle(7.5)
+        elif (pincode==3):
+            s1.ChangeDutyCycle(2.5) #TURN SERVO MOTOR BY 180 i.e push the package in cart 1  
+            s1.ChangeDutyCycle(7.5)
+            
     
         
           
