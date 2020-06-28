@@ -28,15 +28,15 @@ s2.start(0)
 try:
     while True:
         if(pincode == 1):
-            s1.ChangeDutyCycle(7.5) #TURN SERVO MOTOR BY 90 i.e push the package in cart 1  
+            s1.ChangeDutyCycle(7.5) 
             s2.ChangeDutyCycle(2.5)
 
         elif (pincode == 2):
-            s2.ChangeDutyCycle(7.5) #TURN BOTH SERVO MOTOR BY 90 i.e push the package in cart 2 
+            s2.ChangeDutyCycle(7.5) 
             s1.ChangeDutyCycle(7.5)
             
         elif (pincode == 3):
-            s2.ChangeDutyCycle(7.5) #TURN SERVO MOTOR BY 90 i.e push the package in cart 3 
+            s2.ChangeDutyCycle(7.5)
             s1.ChangeDutyCycle(2.5)
     
         GPIO.cleanup()
