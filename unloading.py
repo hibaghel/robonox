@@ -12,9 +12,12 @@ def setup():
 def loop():
     GPIO.output(motor1, HIGH)
     GPIO.output(motor2, LOW)
+def stop():
+    GPIO.output(motor1, LOW)
+    GPIO.output(motor2, LOW)
 
 def forward():
     setup()
     loop()
     sleep(10)
-    GPIO.cleanup()
+    

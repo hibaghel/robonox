@@ -12,5 +12,7 @@ if __name__ == "__main__":
 
     # deliver to cart associated with the pincode 
     deliveryMotors.deliver(pincode)
+    GPIO.cleanup()
+
 
 

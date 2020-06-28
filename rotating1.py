@@ -58,21 +58,17 @@ def loop():
 	GPIO.output(22, False)
 
 	m2.ChangeDutyCycle(0)"""
+def get_pincode():
+	try:
+	setup()
+	while True:
+		p = scanner.scan_video()
+		if not (p):
+			return p
+		loop()				
+	
+		m1.ChangeDutyCycle(7.0)       # rotate the platform by 90 degrees
+		time.sleep(2)
 
-try:
-   setup()
-   while True:
-            if(scanner.scan_video()=="None):
-             loop()  
-             
-             else:
-                break;                # barcode is found
-       
-        m1.ChangeDutyCycle(7.0)       # rotate the platform by 90 degrees
-        time.sleep(2)
 
-except KeyboardInterrupt:
-m1.stop(0)
-
-GPIO.cleanup()
-
+	
